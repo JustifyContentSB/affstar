@@ -10,22 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        @font-face {
-            font-family: 'Druk Wide';
-            src: url('Druk Wide Bold.eot');
-            src: local('Druk Wide Bold'), local('Druk Wide Bold'), url('font/Druk Wide Bold.eot?#iefix') format('embedded-opentype'), url('font/Druk Wide Bold.woff2') format('woff2'), url('font/Druk Wide Bold.woff') format('woff'), url('font/Druk Wide Bold.ttf') format('truetype'), url('font/Druk Wide Bold.otf') format('opentype');
-            font-weight: bold;
-            font-style: normal;
-        }
-        
-        @font-face {
-            font-family: 'Druk Wide';
-            src: url('Druk Wide Medium.eot');
-            src: local('Druk Wide Medium'), local('Druk Wide Medium'), url('font/Druk Wide Medium.eot?#iefix') format('embedded-opentype'), url('font/Druk Wide Medium.woff2') format('woff2'), url('font/Druk Wide Medium.woff') format('woff'), url('font/Druk Wide Medium.ttf') format('truetype');
-            font-weight: 500;
-            font-style: normal;
-        }
-        
         body {
             width: 100% !important;
             -webkit-text-size-adjust: 100%;
@@ -104,8 +88,11 @@
             vertical-align: middle;
         }
         
+        .soc__list-text {
+            white-space: nowrap;
+        }
+        
         .title {
-            font-family: 'Druk Wide';
             font-weight: bold;
             font-size: 25px;
             line-height: 33px;
@@ -193,154 +180,279 @@
             text-align: center;
             color: #B5B5B5;
         }
+        /* @media screen and (max-width: 500px) {
+            .header tr {
+                display: block;
+            }
+            .header td {
+                display: block;
+                text-align: center;
+            }
+            .header__logo-td {
+                width: 178px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .header__logo img {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .header__platform {
+                margin-bottom: 5px;
+            }
+            .header__about {
+                margin-top: 5px;
+            }
+            .soc__items {
+                display: block;
+            }
+            .soc__items table {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .soc__items-list {
+                margin-bottom: 20px;
+            }
+            .soc__tr {
+                display: block;
+            }
+            .features__tr {
+                display: block;
+            }
+            .features__td {
+                display: block !important;
+                width: 100%;
+                margin-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .features__list {
+                margin: 0 auto;
+            }
+            .features__text {
+                width: 110px !important;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .soc tbody>tr {
+                display: block;
+            }
+            .soc__td {
+                display: block;
+                margin-bottom: 10px;
+            }
+        } */
     </style>
 </head>
 
 <body style="margin: 0; padding: 0;">
-    <div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
     <table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
         <tbody>
+            <tr>
+                <td height="20"></td>
+            </tr>
             <tr>
                 <td>
                     <table cellpadding="0" cellspacing="0" width="600" align="center" bgcolor="#181D63">
                         <tbody>
                             <tr>
                                 <td>
-                                    <table class="header" cellpadding="0" cellspacing="0" width="550" align="center">
+                                    <table cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <img src="http://webbber.ru/pismo/empty.gif" alt="" width="600" height="1">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="header" cellpadding="0" cellspacing="0" width="570" align="center">
                                         <tbody>
                                             <tr>
                                                 <td height="23"></td>
                                             </tr>
                                             <tr>
+                                                <td width="10"></td>
                                                 <td class="header__platform">Аффилиат-платформа <br> нового поколения! </td>
-                                                <td>
-                                                    <a class="header__logo" href="#"><img src="img/logo.png" alt="logo"></a>
+                                                <td class="header__logo-td">
+                                                    <a class="header__logo" href="#" target="_blank"><img src="http://webbber.ru/pismo/logo.png" alt=""></a>
                                                 </td>
                                                 <td class="header__about">
                                                     Не грузятся картинки? <br>
-                                                    <a href="#">Нажмите тут</a>
+                                                    <a href="#" target="_blank" target="_blank">Нажмите тут</a>
                                                 </td>
+                                                <td width="10"></td>
                                             </tr>
                                             <tr>
                                                 <td height="30"></td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="soc" cellpadding="0" cellspacing="0" width="550" align="center">
+                                    <table class="soc" cellpadding="0" cellspacing="0" width="570" align="center">
                                         <tbody>
-                                            <tr>
-                                                <td>
-                                                    <a href="#"><img src="img/user.png" alt="img" width="15" height="14"> <span>Личный кабинет</span></a>
+                                            <tr class="soc__tr">
+                                                <td width="10"></td>
+                                                <td class="soc__items soc__items-list">
+                                                    <table class="soc" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="soc__td">
+                                                                    <table class="soc__list" cellpadding="0" cellspacing="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="center"><img src="http://webbber.ru/pismo/user.png" alt="" width="15" height="14"></td>
+                                                                                <td valign="center" class="soc__list-text" style="padding-left: 5px; color: #fff;"><a href="#" style="color: #fff;text-decoration: none;" target="_blank">Личный кабинет</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="15"></td>
+                                                                <td class="soc__td">
+                                                                    <table class="soc__list">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="center"><img src="http://webbber.ru/pismo/chat.png" alt="" width="15" height="15"></td>
+                                                                                <td valign="center" class="soc__list-text" style="padding-left: 5px; color: #fff;"><a href="#" style="color: #fff;text-decoration: none;" target="_blank">Чат помощи арбитражникам</a></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </td>
-                                                <td width="30"></td>
-                                                <td>
-                                                    <a href="#"><img src="img/chat.png" alt="img" width="15" height="15"> <span>Чат помощи арбитражникам</span></a>
+                                                <td width="15"></td>
+                                                <td class="soc__items">
+                                                    <table class="soc__social">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <a href="#" target="_blank"><img src="http://webbber.ru/pismo/telegram.png" alt="" width="15" height="15"></a>
+                                                                </td>
+                                                                <td width="30"></td>
+                                                                <td>
+                                                                    <a href="#" target="_blank"><img src="http://webbber.ru/pismo/instagram.png" alt="" width="15" height="15"></a>
+                                                                </td>
+                                                                <td width="30"></td>
+                                                                <td>
+                                                                    <a href="#" target="_blank"><img src="http://webbber.ru/pismo/vk.png" alt="" width="15" height="15"></a>
+                                                                </td>
+                                                                <td width="30"></td>
+                                                                <td>
+                                                                    <a href="#" target="_blank"><img src="http://webbber.ru/pismo/facebook.png" alt="" width="15" height="15"></a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </td>
-                                                <td width="30"></td>
-                                                <td>
-                                                    <a href="#"><img src="img/telegram.png" alt="img" width="15" height="15"></a>
-                                                </td>
-                                                <td width="30"></td>
-                                                <td>
-                                                    <a href="#"><img src="img/instagram.png" alt="img" width="15" height="15"></a>
-                                                </td>
-                                                <td width="30"></td>
-                                                <td>
-                                                    <a href="#"><img src="img/vk.png" alt="img" width="15" height="15"></a>
-                                                </td>
-                                                <td width="30"></td>
-                                                <td>
-                                                    <a href="#"><img src="img/facebook.png" alt="img" width="15" height="15"></a>
-                                                </td>
+                                                <td width="10"></td>
                                             </tr>
                                             <tr>
                                                 <td height="30"></td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="title" align="center">
+                                    <table cellpadding="0" cellspacing="0" class="title" align="center">
                                         <tbody>
                                             <tr>
-                                                <td><img src="img/1-title1.png" alt="Добро пожаловать в Affstar"></td>
+                                                <td><img src="http://webbber.ru/pismo/1-title1.png" alt=""></td>
                                             </tr>
                                             <tr>
                                                 <td height="40"></td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="register" width="460" align="center">
+                                    <table cellpadding="0" cellspacing="0" class="register" width="480" align="center">
                                         <tbody>
                                             <tr>
-                                                <td>Чтобы завершить регистрацию, перейди по этой <a href="#">ссылке</a>, или нажми на кнопку ниже.</td>
+                                                <td width="10"></td>
+                                                <td>Чтобы завершить регистрацию, перейди по этой <a href="#" target="_blank">ссылке</a>, или нажми на кнопку ниже.</td>
+                                                <td width="10"></td>
                                             </tr>
                                             <tr>
                                                 <td height="25"></td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table align="center">
+                                    <table cellpadding="0" cellspacing="0" align="center">
                                         <tbody>
                                             <tr>
                                                 <td class="btn" align="center">
-                                                    <a href="#"><img src="img/btn-1.png" alt="кнопка" width="284" height="106"></a>
+                                                    <a href="#" target="_blank"><img src="http://webbber.ru/pismo/btn-1.png" alt="" width="284" height="106"></a>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="features" width="470" align="center">
+                                    <table cellpadding="0" cellspacing="0" class="features" width="470" align="center">
                                         <tbody>
-                                            <tr>
-                                                <td class="features__item">
-                                                    <table class="features__about" align="center">
+                                            <tr class="features__tr">
+                                                <td class="features__td">
+                                                    <table class="features__list">
                                                         <tbody>
                                                             <tr>
-                                                                <td class="features__icon" align="center"><img src="img/circle-1.png" alt="Динамическая ставка"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="features__text">Динамическая <br> ставка
+                                                                <td class="features__item">
+                                                                    <table cellpadding="0" cellspacing="0" class="features__about" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="features__icon" align="center"><img src="http://webbber.ru/pismo/circle-1.png" alt=""></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="features__text">Динамическая <br> ставка
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="30"></td>
+                                                                <td class="features__item">
+                                                                    <table cellpadding="0" cellspacing="0" class="features__about" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="features__icon" align="center"><img src="http://webbber.ru/pismo/circle-2.png" alt=""></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="features__text">Помощь <br> с настройками
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
                                                 </td>
                                                 <td width="30"></td>
-                                                <td class="features__item">
-                                                    <table class="features__about" align="center">
+                                                <td class="features__td">
+                                                    <table class="features__list">
                                                         <tbody>
                                                             <tr>
-                                                                <td class="features__icon" align="center"><img src="img/circle-2.png" alt="Помощь
-                                                                    с настройками"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="features__text">Помощь <br> с настройками
+                                                                <td class="features__item">
+                                                                    <table cellpadding="0" cellspacing="0" class="features__about" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="features__icon" align="center"><img src="http://webbber.ru/pismo/circle-3.png" alt=""></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="features__text">Бесплатная <br> клоака
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                                <td width="30"></td>
-                                                <td class="features__item">
-                                                    <table class="features__about" align="center">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="features__icon" align="center"><img src="img/circle-3.png" alt="Бесплатная клоака"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="features__text">Бесплатная <br> клоака
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </td>
-                                                <td width="30"></td>
-                                                <td class="features__item">
-                                                    <table class="features__about" align="center">
-                                                        <tbody>
-                                                            <tr>
-                                                                <td class="features__icon" align="center"><img src="img/circle-4.png" alt="Готовые прилки"></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td class="features__text">Готовые <br> прилки
+                                                                <td width="30"></td>
+                                                                <td class="features__item">
+                                                                    <table cellpadding="0" cellspacing="0" class="features__about" align="center">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td class="features__icon" align="center"><img src="http://webbber.ru/pismo/circle-4.png" alt=""></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="features__text">Готовые <br> прилки
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                             </tr>
                                                         </tbody>
@@ -352,7 +464,7 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="error" align="center" width="470">
+                                    <table cellpadding="0" cellspacing="0" class="error" align="center" width="470">
                                         <tbody>
                                             <tr>
                                                 <td>Если вдруг ты не отправлял запрос на регистрацию, или он был отправлен ошибочно, просто удали это письмо.</td>
@@ -362,25 +474,35 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <table class="footer" width="600" bgcolor="#12164E">
+                                    <table cellpadding="0" cellspacing="0" class="footer" width="600" bgcolor="#12164E">
                                         <tbody>
                                             <tr>
                                                 <td height="40"></td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <table class="footer__text" width="470" align="center">
+                                                    <table cellpadding="0" cellspacing="0" class="footer__text" width="490" align="center">
                                                         <tbody>
                                                             <tr>
-                                                                <td>Чтобы рассылка не попадала в нежелательную почту, добавьте <a class="footer__text-email" href="#">info@affstar.com</a> в адресную книгу. Чтобы не потерять ссылки из письма, пометьте его флажком
-                                                                    "Избранное"
+                                                                <td>
+                                                                    <table>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td width="10"></td>
+                                                                                <td>Чтобы рассылка не попадала в нежелательную почту, добавьте <a class="footer__text-email" href="#">info@affstar.com</a> в адресную книгу. Чтобы не потерять ссылки из письма,
+                                                                                    пометьте его флажком "Избранное"
+                                                                                </td>
+                                                                                <td width="10"></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
                                                                 </td>
                                                             </tr>
                                                             <tr>
                                                                 <td height="23"></td>
                                                             </tr>
                                                             <tr>
-                                                                <td class="footer__affstar"><a href="#">affstar.com</a></td>
+                                                                <td class="footer__affstar"><a href="#" target="_blank">affstar.com</a></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -396,6 +518,9 @@
                         </tbody>
                     </table>
                 </td>
+            </tr>
+            <tr>
+                <td height="20"></td>
             </tr>
         </tbody>
     </table>
